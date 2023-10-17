@@ -1,0 +1,76 @@
+Commands:
+
+git : general help command
+
+git init : initialize empty git repo
+
+git status : shows commits, untracked files,
+             staged files, modified files, deleted files etc
+
+git add . : stage all files
+
+git add <filename1> <filename2> ... : stage specific files
+
+git commit -m "<message>" : to commit to memory. -m is for message
+
+git restore --staged <filename> : removed file from staging area
+
+git log : shows entire history of commits
+
+git reset <commitID> : copy id of the commit we want to see on top. 
+                       for eg if we want latest 2 commits to be removed then
+                       we copy commit id of 3rd latest commit. Basically the
+                       commitID we select is the one we want to shift to...
+                       the one we wanna use and build upon. The new, modified files etc are untracked (unstaged) now
+
+git stash : it takes the files in the staging area and puts them aside
+            (sends to backstage lol)
+
+git stash pop : brings the stashed back (as untracked files)
+
+git stash clear: deletes the files in stash (irreversible step)
+
+git remote add origin <url> : connects our own repo to the local repo
+                              remote - we're using URLs
+                              add - adding a new URL
+                              origin - By convention all the directories and
+                              files in our own account are called origin
+                              (origin is kind of like a name for OUR remote
+                              repo...it's made by us)
+
+git remote -v : shows all URLs attached to the folder
+
+git push <url-nametag> <branch> : pushes a branch to the remote url
+                          eg. git push origin main
+
+git branch <branch-name> : creates a new branch. It doesn't shift to the new branch though. 
+                           The new branch is ALWAYS created from the 'head'
+
+git checkout <branch-name> : makes the 'head' point to the specified branch. 'head' is a pointer.
+                             All new commits are added on the head.
+
+git merge <branch-name> : merges the branch specified to main
+
+git clone <url> : clones a repo to the local machine
+
+git remote add upstream <url> : sets upstream URL. upstream is from where we fork
+
+git push <url> <branch> -f : Force push. Useful when we have to remove a commit from a PR we have
+                             already made (This should be used after git reset).
+
+git fetch --all --prune : Syncs fork with upstream. --all means fetch all branches. 
+                          --prune means fetch branches that have deleted. After this checkout to 'main'
+                          and use git reset --hard upstream/main
+
+git reset --hard upstream/main :  fork's main is now same as that of upstream (need to do a 'git push origin main' once ig)
+
+git pull upstream main : syncs fork's main with upstream. Basically this is a culmination of above 3 
+                         (fetch main, checkout to main, reset to upstream/main). After this sync the 
+                         local to our fork on github too (remote) by git push origin main
+
+git rebase -i <commitID> : Used to squash multiple commits into one (merge commits). -i means interactive 
+                           environment. Just like resetting, the commitID is of the commit just before the one we wanna squash
+                           (kinda not true ik...use the interactive environment...s for squash...p for pick (use commit)). 
+                           eg. If i have commits 1,2,3,4 and we wanna squash 3 and 4 then we copy ID of 2. p s s p will squash the middle two commits.
+                           esc -> :x will allow me to enter a new message for the squashed commit. Use :x again to exit it. 
+                           Aliter - Reset to the prev commit. Now all new changes are untracked. Make one single commit now.
