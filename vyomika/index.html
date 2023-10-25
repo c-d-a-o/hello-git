@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong> moana</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">hilarious hurricane of hilarity!</p>
+            <img src="https://i.pinimg.com/474x/f2/72/1b/f2721be1a304399c5505b7c556077a42.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>dream </h3>
+                    <p>no no not about tiaras and prince charming, I dream of crossing the big blue endless sea, ignoring the fact that i am strictly told to stay away from it- but hey defying instructions is the best thing I do besides getting into trouble or putting the world into one (temporarily duh!).</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Adventure</h3>
+                    <p>getting on ship that has more chance of sinking than a snail, facing off against a lava monster and trying to convince the demigod maui thatt he really needs to get off his lazy clouds and help out to save the world. of all the things I also take it upon me to train heihei who's as useful as a screen door on a submarine, but hey, he adds to the drama better than maui's dancing tatoos (like what the-?)</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>sing and save</h3>
+                    <p>ocean's fav person and the chosen hero has to sing.I-CAN-DO-ANYTHING. be it defying logic, gravity or basic common sense. but hey I saved mother nature so I am hero after all </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Defying gravity, logic, and the occasional talking to coconut with style girl!</p>
+           
+           <div class="about-me__body">
+               <p>the girl who makes "finding yourself" look like a tropical vacation gone wrong! Imagine a world where the ocean seems to have a vendetta against your very existence, where your idea of a good time is arguing with coconut trees and trying to teach a clueless chicken how to navigate.</p>
+               <p>the fearless wanderer with a knack for stumbling into trouble, is the kind of girl who thinks a seashell bra is a practical piece of clothing. I mean, who needs pockets when you can carry around sandy shells that chafe in all the wrong places? And let's talk about her boat – a glorified canoe that's more likely to sink than sail, and yet she's convinced it's the key to unlocking her destiny.</p>
+           </div>
+           
+           <img src="https://i.ytimg.com/vi/lAkw1M2G5y8/maxresdefault.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My adventure</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my stupidity</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="https://i.pinimg.com/474x/fa/99/4b/fa994b61819fdc742819063a47e9d5f5.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="https://i.pinimg.com/474x/56/7b/dd/567bdd4a754b58109a4233b1b3438126.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="https://i.pinimg.com/474x/33/8d/98/338d98b340da70d3651fbf7a3cf48138.jpg" alt="" class="portfolio__img">
+                </a>
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="https://i.pinimg.com/474x/4c/70/29/4c70296588c1df281332c6779bc29e2d.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">hello@trouble.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://i.pinimg.com/474x/ca/42/e3/ca42e3459ade4f88ccee17fa146cec1f.jpg">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://i.pinimg.com/474x/4f/23/48/4f2348347687d6f7f27845333113d059.jpg">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://i.pinimg.com/474x/cb/e0/9f/cbe09f3b4d562bf15bc9506167200be5.jpg">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://th.bing.com/th/id/OIP.WUQMdwL4HgbEPgmLojlVTgHaEK?w=315&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
