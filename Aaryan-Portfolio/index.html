@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaryan Rajput Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Aaryan Rajput</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Web Dev</p>
+      <img
+        src="img\AaryanRajput.jpg"
+        alt="a picture of Aaryan Rajput smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Web Scraping</h3>
+          <p>
+            Well I did a web scraping project in which you can actually get
+            prices, images, title, product description, and other sellers of the
+            Amazon product. And that definitely makes me a professional
+            webscraper, right?
+            <strong>
+              <a href="img\RIGHT.jpg" style="color: chartreuse" id="openPopup"
+                >RIGHT?</a
+              >
+            </strong>
+          </p>
+        </div>
+        <div class="popup" id="image-popup">
+          <span class="close-button" onclick="closeImage()">&times;</span>
+          <img src="img\RIGHT.jpg" alt="RIGHT?" />
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Front End Dev</h3>
+          <p>
+            I can create multiwebpage websites with functionalities of your
+            choice. I am also in the process of making a website that aims to
+            solve a problem we face as students (at least I DO).
+            <strong>
+              <a href="img/Call.png" style="color: chartreuse" id="openPopup"
+                >And you can see the website if you give me a call honey?</a
+              >
+            </strong>
+          </p>
+        </div>
+        <div class="popup" id="image-popup">
+          <span class="close-button" onclick="closeImage()">&times;</span>
+          <img
+            src="img/Call.png"
+            alt="And you can see the website if you give me a call honey?"
+          />
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Web Automation</h3>
+          <p>
+            I can use my web automation skills to automate boring web task such
+            as filling google forms, generating username & password for a
+            website etc.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Student At NIT Jalandhar
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          I'm a programming enthusiast with a deep passion for solving real-life
+          challenges that impact people's lives. Currently, I'm delving into
+          various programming domains, and I thoroughly enjoy collaborating on
+          team projects with new faces. It's not just about the code; it's about
+          the collective learning journey and the opportunity to make a
+          meaningful impact in a fun and creative way, yaar!
+        </p>
+        <p>
+          Btw this is my <b>freshers photo</b>. If I get the merch I would share
+          a crazy story about my freshers night with you lol (BTW it's not that
+          crazy)
+        </p>
+      </div>
+
+      <img
+        src="img\freshers.jpg"
+        alt="Aaryan looking sexily into the camera"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item1.html" class="portfolio__item1">
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="portfolio-item2.html" class="portfolio__item2">
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          class="portfolio__item"
+        >
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:aaryanrajput314@gmail.com" class="footer__link"
+        >aaryanrajput314@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="img/account.jpg">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="img/account.jpg">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/AaryanRajput314"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/aaryanrajputhere"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
