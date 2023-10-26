@@ -15,7 +15,7 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #ff3c00;
+    --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -82,7 +82,6 @@ strong { font-weight: var(--fw-bold) }
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-    
 }
 
 .btn:hover {
@@ -143,7 +142,7 @@ header {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 100px;
 }
 
 .nav {
@@ -252,6 +251,10 @@ header {
     position: relative;
 }
 
+.intro__img {
+    box-shadow: var(--bs);
+}
+
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -269,12 +272,10 @@ header {
     }
     
     .intro__img {
-        box-shadow: var(--bs);
         grid-area: img;
         min-width: 250px;
         position: relative;
         z-index: 2;
-
     }    
     
     .section__subtitle--intro {
@@ -475,78 +476,3 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-.glow-on-hover:active{
-    color: #000
-}
-
-.glow-on-hover:active:after{
-    background:transparent;
-}
-
-
-.intro__img { 
-    border-radius: 10%;
-     
-} 
-  
-.intro__img:hover { 
-    color: #111; 
-    background: rgb(243, 36, 29); 
-    box-shadow: 0 0 100px rgb(104, 3, 12); 
-    border-radius: 10%;
-} 
-
-.section__subtitle--intro{
-    color: white;
-}
-
-.about-me__img{ 
-    border-radius: 10%;
-} 
-
-.about-me__img:hover{ 
-    color: #111; 
-    background: rgb(243, 36, 29); 
-    box-shadow: 0 0 100px rgb(104, 3, 12); 
-    border-radius: 10%;
-} 
-
-.section__subtitle--about{color: white;}
-
-.social-list__item:hover {
-        transform: scale(2);
-}
-
-.section__subtitle--work:hover{
-    transform: scale(1.25);
-    transition: 0.5s;
-}
-
-.hamburger:hover{
-    transform: scale(1.5);
-}
-
-.shayarii{
-    border-radius:  5%;
-    height: 320px;
-}
-.shayarii:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
-}
-
-.shayarii:hover{
-    box-shadow:0 0 100px orangered;
-}
-
-
-
-.clickhere{
-     color:white;
-}
-
-
-
-
-
